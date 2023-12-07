@@ -1,0 +1,44 @@
+.campo-texto {
+    margin: 24px 0;
+
+}
+
+.campo-texto label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.campo-texto input {
+    height: 50%;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 10px 2px;
+}
+
+.input-cadastro{
+    border-radius: 10px 2px;  
+    padding: 19px;
+    height: 50%;
+    width: 100%;
+    border: none;
+}
+
+.btn-login {
+    top: 95%;
+    position: absolute;
+    left:50%;
+    width: 19%;
+    height: 5%;
+    background: #ffffff;
+    color: #1a73e8 ;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+  }
+

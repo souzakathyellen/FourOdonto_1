@@ -1,17 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./componentes/Header";
+import Home from "./rotas/Home";
+import Vagas from "./rotas/Vagas";
+import CadastroVagas from "./rotas/CadastroVaga";
+import GerenciamentoVagas from "./rotas/GerenciamentoVagas";
+import Login from "./rotas/Login";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  <StrictMode>
+    <BrowserRouter>
+      {/* Inserir o Header para aparecer em todas as páginas */}
+      <Header />
+      <Routes>
+        {/* Parâmetros, path: caminho do site,  element: o que será carregado
+        na página  */}
+        <Route path="/cadastro" element={<CadastroVagas />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/vagas" element={<Vagas />} />
+        <Route path="/gerenciamentodevagas" element={<GerenciamentoVagas />} />
+        <Route path="/Login" element={<Login />} />
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+       </Routes>
+    </BrowserRouter>
+  </StrictMode>
+);

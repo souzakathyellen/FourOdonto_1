@@ -1,0 +1,18 @@
+.formulario {
+    position:absolute;
+        width: 400px;
+		left:65%;
+		top:130%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #ffffff;
+        font-size: 19px;
+        display: block;
+        margin-bottom: 8px;
+}
+.formulario form {
+    background-color: #152b90;
+    border-radius: 15px;
+    padding: 59px 64px;
+    width: 450px;
+ 
+}
